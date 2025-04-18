@@ -1,0 +1,22 @@
+
+<section class="pt-3y
+">
+    <div class="container">
+        <div class="row g-4">
+           @for (mov of movies.slice(6,22);track mov.id) {
+            <div class="col-md-3">
+                <div class="card h-100 ">
+                   <img class="card-img-top" [src]=" imgPath + mov.poster_path" alt="Title" />
+                   <div class="card-body">
+                       <h4 class="card-title">Title:{{mov.title}} {{mov.name}}</h4>
+                       <p class="card-text">overView:{{mov.overview}}y
+
+                       </p>
+                   </div>
+                </div>
+                
+           </div>
+           }
+        </div>
+    </div>
+</section>
